@@ -2,10 +2,7 @@ package com.kerno.webviewapp;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,8 +17,9 @@ public class DashboardActivity extends AppCompatActivity
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_main);
 
-                Button btnViewButton = findViewById(R.id.btnViewWebsite);
-                btnViewButton.setOnClickListener(new View.OnClickListener()
+                Button btnViewWebsite = findViewById(R.id.btnViewWebsite);
+                Button btnViewProfile = findViewById(R.id.btnViewProfile);
+                btnViewWebsite.setOnClickListener(new View.OnClickListener()
                     {
                         @Override
                         public void onClick(View view)
@@ -29,11 +27,25 @@ public class DashboardActivity extends AppCompatActivity
                                 openAndelaWebsite();
                             }
                     });
+                btnViewProfile.setOnClickListener(new View.OnClickListener()
+                    {
+                        @Override
+                        public void onClick(View view)
+                            {
+                                openMyProfile();
+                            }
+                    });
             }
 
         private void openAndelaWebsite()
             {
                 Intent intent = new Intent(this, WebviewActivity.class);
+                startActivity(intent);
+            }
+
+        private void openMyProfile()
+            {
+                Intent intent = new Intent(this, Profile.class);
                 startActivity(intent);
             }
 
