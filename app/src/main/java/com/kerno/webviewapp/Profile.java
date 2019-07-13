@@ -29,6 +29,5 @@ public class Profile extends AppCompatActivity
                 RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), bitmap);
                 roundedBitmapDrawable.setCircular(true);
                 imageView.setImageDrawable(roundedBitmapDrawable);
-
             }
     }
