@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/img_profile_pic"
-        android:layout_width="395dp"
-        android:layout_height="272dp"
+        android:layout_width="269dp"
+        android:layout_height="220dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -53,14 +53,17 @@
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txt_Track"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="@string/txt_Track"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,14 +84,16 @@
         app:layout_constraintGuide_begin="471dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/txt_Country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="@string/txt_Country"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,14 +107,16 @@
         app:layout_constraintGuide_begin="520dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/txt_Email_Address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="@string/txt_Email_Address"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="parent"
@@ -123,14 +130,16 @@
         app:layout_constraintGuide_begin="564dp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txt_Phone_Number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
+        android:fontFamily="@font/roboto_condensed_bold"
+        android:text="@string/txt_Phone_Number"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="parent"
@@ -216,7 +225,7 @@
         android:id="@+id/group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="textView3,textView6,textView5,textView4" />
+        app:constraint_referenced_ids="txt_Track,txt_Phone_Number,txt_Email_Address,txt_Country" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group2"
