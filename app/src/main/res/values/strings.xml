@@ -6,4 +6,5 @@
     <string name="img_profile_picture">Profile Picture</string>
     <string name="txt_view_welcome">Welcome to ALC 4.0</string>
     <string name="andelaURL">https://www.andela.com/alc</string>
+    <string name="notification_error_ssl_cert_invalid">The certificate presented by this site seems to be invalid Would you like to proceed</string>
 </resources>
