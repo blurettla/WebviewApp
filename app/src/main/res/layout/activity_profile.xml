@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pageBackground"
     tools:context=".Profile">
 
     <ImageView
@@ -56,7 +57,7 @@
         android:id="@+id/txt_Track_Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_condensed_bold"
@@ -85,7 +86,7 @@
         android:id="@+id/txt_Country"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_condensed_bold"
@@ -106,7 +107,7 @@
         android:id="@+id/txt_Email_Address_Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_condensed_bold"
@@ -127,7 +128,7 @@
         android:id="@+id/txt_Phone_Number_Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_condensed_bold"
@@ -156,7 +157,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="205dp" />
+        app:layout_constraintGuide_begin="170dp" />
 
     <TextView
         android:id="@+id/txt_Track"
@@ -165,6 +166,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto_condensed_bold"
         android:text="@string/txt_Track"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
@@ -177,6 +179,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto_condensed_bold"
         android:text="@string/txt_Country"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
@@ -190,6 +193,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:autoLink="email"
+        android:fontFamily="@font/roboto_condensed_bold"
         android:linksClickable="true"
         android:text="@string/txt_Email_Address"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
@@ -204,6 +208,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:autoLink="phone"
+        android:fontFamily="@font/roboto_condensed_bold"
         android:linksClickable="true"
         android:text="@string/txt_Phone_Number"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
@@ -240,12 +245,14 @@
         android:id="@+id/txt_Slack_Username_Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/txt_Slack_Username_Label"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
-        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     <TextView
@@ -255,6 +262,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto_condensed_bold"
         android:text="@string/txt_Slack_Username"
         app:layout_constraintBottom_toTopOf="@+id/guideline11"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
