@@ -15,7 +15,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="18dp"
         android:contentDescription="@string/img_profile_picture"
-        app:layout_constraintBottom_toTopOf="@+id/txt_User_name"
+        app:layout_constraintBottom_toTopOf="@+id/txt_User_Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -36,14 +36,14 @@
         app:layout_constraintGuide_begin="365dp" />
 
     <TextView
-        android:id="@+id/txt_User_name"
+        android:id="@+id/txt_User_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="Regginald Kembo"
+        android:text="@string/txt_user_name"
         android:textSize="30sp"
         android:typeface="normal"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
@@ -53,19 +53,17 @@
         app:layout_constraintTop_toTopOf="@+id/guideline10" />
 
     <TextView
-        android:id="@+id/txt_Track"
+        android:id="@+id/txt_Track_Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_condensed_bold"
-        android:text="@string/txt_Track"
+        android:text="@string/txt_Track_Label"
         android:textAlignment="viewStart"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
@@ -89,13 +87,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_condensed_bold"
-        android:text="@string/txt_Country"
+        android:text="@string/txt_Country_Label"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
@@ -107,18 +103,16 @@
         app:layout_constraintGuide_begin="520dp" />
 
     <TextView
-        android:id="@+id/txt_Email_Address"
+        android:id="@+id/txt_Email_Address_Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_condensed_bold"
-        android:text="@string/txt_Email_Address"
+        android:text="@string/txt_Email_Address_Label"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
@@ -130,18 +124,16 @@
         app:layout_constraintGuide_begin="564dp" />
 
     <TextView
-        android:id="@+id/txt_Phone_Number"
+        android:id="@+id/txt_Phone_Number_Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="@font/roboto_condensed_bold"
-        android:text="@string/txt_Phone_Number"
+        android:text="@string/txt_Phone_Number_Label"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toStartOf="@+id/guideline8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
@@ -167,13 +159,13 @@
         app:layout_constraintGuide_begin="205dp" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/txt_Track"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
+        android:text="@string/txt_Track"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
@@ -185,31 +177,35 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
+        android:text="@string/txt_Country"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
         app:layout_constraintTop_toTopOf="@+id/guideline3" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/txt_Email._Address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
+        android:autoLink="email"
+        android:linksClickable="true"
+        android:text="@string/txt_Email_Address"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/txt_Phone_Number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="TextView"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:text="@string/txt_Phone_Number"
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
@@ -225,12 +221,43 @@
         android:id="@+id/group"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="txt_Track,txt_Phone_Number,txt_Email_Address,txt_Country" />
+        app:constraint_referenced_ids="txt_Track,txt_Phone_Number_Label,txt_Email_Address_Label,txt_Country" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:constraint_referenced_ids="textView9,textView11,textView8,textView10" />
+        app:constraint_referenced_ids="textView9,txt_Phone_Number_Label,txt_Track,txt_Email._Address" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="612dp" />
+
+    <TextView
+        android:id="@+id/txt_Slack_Username_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/txt_Slack_Username_Label"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+    <TextView
+        android:id="@+id/txt_Slack_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/txt_Slack_Username"
+        app:layout_constraintBottom_toTopOf="@+id/guideline11"
+        app:layout_constraintStart_toStartOf="@+id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
