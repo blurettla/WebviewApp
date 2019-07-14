@@ -1,7 +1,9 @@
 package com.kerno.webviewapp;
 
 import android.annotation.SuppressLint;
+
 import android.os.Bundle;
+
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -23,6 +25,7 @@ public class WebviewActivity extends AppCompatActivity
                     {
                         actionBar.setTitle("About ALC");
                     }
+
                 WebView webView = findViewById(R.id.andelaWebview);
                 webView.setWebViewClient(new WebViewClient());
                 WebSettings webSettings = webView.getSettings();
